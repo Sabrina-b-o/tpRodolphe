@@ -2,15 +2,17 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Ca c'est du responsive !</title>
+    <link rel="stylesheet" href="../style_steeven.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Team Rocket</title>
 </head>
 <body>
 
     <header>
 
-        <img src="images/logo.png" alt="logo">
-        <img src="images/titre.png" alt="logo">
+        <img src="../images/logo.png" alt="logo">
+        <img src="../images/titre.png" alt="logo">
 
     </header>
 
@@ -18,22 +20,22 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html">Accueil</a>
+                <a href="../index.html">Accueil</a>
             </li>
             <li>
-                <a href="pages/html.html">HTML</a>
+                <a href="html.html">HTML</a>
             </li>
             <li>
-                <a href="pages/css.html">CSS</a>
+                <a href="css.html">CSS</a>
             </li>
             <li>
-                <a href="pages/javascript.html">JavaScript</a>
+                <a href="javascript.html">JavaScript</a>
             </li>
             <li>
-                <a href="pages/api.html">API</a>
+                <a href="api.html">API</a>
             </li>
             <li>
-                <a href="pages/contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
@@ -43,65 +45,46 @@
         <!-- CONTENU CENTRAL -->
         <div id="container">
 
-            <article>
-                <h3>
-                    Titre 1
-                </h3>
-                <div class="contenu_article">
-                    <img src="images/article1.jpeg">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
-                    </p>
-                </div>
-            </article>
+            <section>
+                <h3>Formulaire de contact :</h3>
+                    <!--<img src="../images/logo.png">-->
+                    <form method="POST" action="fictive.php">
 
-            <article>
-                <h3>
-                    Titre 2
-                </h3>
-                <div class="contenu_article">
-                    <img src="images/article2.jpeg">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
-                    </p>
-                </div>
-            </article>
+                        <div class="contenu_contact">
+                            <div>
+                                <div class="formulaire">
+                                    <label class="red" for="nom">Nom :</label>
+                                    <input type="text" minlength="2" maxlength="20" name="nom" id="nom"/>
+                                </div>
+                                <div class="formulaire">
+                                    <label class="red" for="prenom">Prénom :</label>
+                                    <input type="text" name="prenom" id="prenom"/>
+                                </div>
+                                <div class="formulaire">
+                                    <label class="red" for="mail">Email :</label>
+                                    <input type="email" name="mail" id="mail"/>
+                                </div>
+                                <div class="formulaire">
+                                    <label for="tel">Téléphone :</label>
+                                    <input type="tel" name="tel" id="tel"/>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div>
+                                <div class="formulaire">
+                                    <label class="red" for="message">Votre message :</label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formulaire">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
 
-            <article>
-                <h3>
-                    Titre 3
-                </h3>
-                <div class="contenu_article">
-                    <img src="images/article3.jpeg">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
-                    </p>
-                </div>
-            </article>
+            </section>
 
         </div>
-
-        <!-- CONTENU LATERAL DROIT -->
-        <aside>
-            <h2>
-                Galerie
-            </h2>
-            <div>
-                <img src="images/article1.jpeg" alt="article1">
-                <img src="images/article2.jpeg" alt="article2">
-                <img src="images/article3.jpeg" alt="article3">
-            </div>
-        </aside>
-
     </div>
 
     <footer>
