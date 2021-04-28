@@ -2,15 +2,18 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Ca c'est du responsive !</title>
+    <link rel="stylesheet" href="style_leandre.css">
+    <title>Team Rocket</title>
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
 
-        <img src="images/logo.png" alt="logo">
-        <img src="images/titre.png" alt="logo">
+        <img src="../images/logo.png" alt="logo">
+        <img src="../images/titre.png" alt="logo">
 
     </header>
 
@@ -18,42 +21,67 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html">Accueil</a>
+                <a href="../index.html">Accueil</a>
             </li>
             <li>
-                <a href="pages/html.html">HTML</a>
+                <a href="html.html">HTML</a>
             </li>
             <li>
-                <a href="pages/css.html">CSS</a>
+                <a href="css.html">CSS</a>
             </li>
             <li>
-                <a href="pages/javascript.html">JavaScript</a>
+                <a href="javascript.html">JavaScript</a>
             </li>
             <li>
-                <a href="pages/api.html">API</a>
+                <a href="api.html">API</a>
             </li>
             <li>
-                <a href="pages/contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
 
+    <!-- PRESENTATION -->
+
+    <article id="presentation">
+        <h3>
+            Introduction à CSS
+        </h3>
+        <div class="contenu_article">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/langfr-800px-CSS3_logo_and_wordmark.svg.png" alt="" id="css_image">
+            <p id="text_presentation">
+                Le Css (Cascading Style Sheets en anglais) permet de faire une mise en page d'un site web en Html. Il reprend les éléments d'un fichier html et avec des noms, class ou id on peut réorganiser la page, changer les couleurs et faire de l'animation basique. Il gère toute l'apparence du site.
+                <span></span>
+                Tout d'abord il faut que le fichier css sois pris en compte par le fichier html donc il faut ajouter cette ligne dans le head :
+                <br>
+                <code>&ltlink&gt; rel="stylesheet" href="le_nom_du_css.css&gt;</code>  
+            </p>
+        </div>
+    </article>
+
     <div id="main">
+
 
         <!-- CONTENU CENTRAL -->
         <div id="container">
 
             <article>
                 <h3>
-                    Titre 1
+                    Les sélecteurs
                 </h3>
                 <div class="contenu_article">
-                    <img src="images/article1.jpeg">
+                    <img src="../images/css/selecteur.png">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
+                        Il y a diverses façons de sélectionner un élément dans le fichier html :
+                        <br>
+                        <br>
+                        - En premier lieux on a les class, on peut en donner plusieurs à un même élément, tout comme on peut donner la même à différents éléments, puis dans le css il suffit de mettre un "." devant son nom pour sélectionner la class.
+                        <br>
+                        - Il y a les id, ils se limite à un seul par élément et ils doivent être unique, dans le css il faut un "#" devant son nom pour sélectionner l'id en question.
+                        <br>
+                        - On peut aussi appeler les éléments directement par leurs noms, mais cela sélectionne TOUS les éléments en question, sinon donner "le chemin d'accès" de l'élément avec un > entre les éléments.
+                        <br>
+                        - Un peu plus poussé, il y a les ":nth-child(X)" qui permet de sélectionner l'enfant d'un élément.
                     </p>
                 </div>
             </article>

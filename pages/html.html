@@ -2,15 +2,18 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Ca c'est du responsive !</title>
+    <link rel="stylesheet" href="./../stylesab.css">
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>HTML</title>
 </head>
 <body>
 
     <header>
 
-        <img src="images/logo.png" alt="logo">
-        <img src="images/titre.png" alt="logo">
+        <img src="../images/logo.png" alt="logo">
+        <img src="../images/titre.png" alt="logo">
 
     </header>
 
@@ -18,73 +21,68 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html">Accueil</a>
+                <a href="../index.html">Accueil</a>
             </li>
             <li>
-                <a href="pages/html.html">HTML</a>
+                <a href="html.html">HTML</a>
             </li>
             <li>
-                <a href="pages/css.html">CSS</a>
+                <a href="css.html">CSS</a>
             </li>
             <li>
-                <a href="pages/javascript.html">JavaScript</a>
+                <a href="javascript.html">JavaScript</a>
             </li>
             <li>
-                <a href="pages/api.html">API</a>
+                <a href="api.html">API</a>
             </li>
             <li>
-                <a href="pages/contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
 
     <div id="main">
 
+
         <!-- CONTENU CENTRAL -->
-        <div id="container">
+        <div id="containerHTML">
 
             <article>
-                <h3>
-                    Titre 1
-                </h3>
+                <h1>
+                    Le HTML c'est quoi ? 
+                </h1>
                 <div class="contenu_article">
-                    <img src="images/article1.jpeg">
+                    <img src="http://1.bp.blogspot.com/-UNNs3TJ4ziE/VLkKWUwUWjI/AAAAAAAAAGY/TlA0vbn9lSc/s1600/FAQ.png">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
+                        Dans son cœur, HTML est un langage vraiment simple, composé d’éléments appliquables à des fragments de texte dans un document pour leur donner un sens différent (est-ce un paragraphe ? est-ce une liste à puces ? est-ce une partie de tableau ?), pour structurer un document en sections logiques (a‑t‑il un en-tête ? est-il sur trois colonnes ? a-t-il un menu de navigation ?) et pour intégrer du contenu comme images ou vidéos dans une page. Ce module est une introduction aux deux premiers concepts ; il présente les notions fondamentales et la syntaxe à connaître pour comprendre le HTML.
                     </p>
                 </div>
             </article>
 
             <article>
-                <h3>
-                    Titre 2
-                </h3>
+                <h1>
+                    Prérequis 
+                </h1>
                 <div class="contenu_article">
-                    <img src="images/article2.jpeg">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABSlBMVEX///8AAADm5uY8yMjb29v09PSOjo7Nzc33ojT0izXycTb2mzT1kjW2tralpaXzejZLS0vxajfAwMD3qjP3pzT2oDT2mDT1kDX0iTX0hTX0gTbycjbzdzb4rDPu7u7xaDc3Nzfe3t4sLCx4eHigoKBnZ2dAQEAaGhrFxcWBgYFWVlZxcXFiYmIlJSWtra0+Pj74rBoUFBSWlpb2liP1jiPzgiH3r4t819f71KD3pSP5u2z3niT2ohX3sHP6zqL1iiP3rn35xaD3spjydyD2po6vTijxYyG76ens+fn+9+v97dr72a7848D705r5vGn4tUDJfhtBS1P/v324ZAnDcSqWVQudXiHlflzRXTBQJBLwWhfNUxzSu7T/0q3zf1n5xbTxYi31lHnyckj729PxaBqlPQzLb074t5f4vqf2mnH0iFKt5eV01dW46Oh9a/ATAAANgElEQVR4nO3d6X/bthkHcEkmpaarHFltknVzGN2HZcmWci1HZzd27CRd13brui27skRbkiX9/9+OB0CCxAMSIB7o+uj3MjKPbwDiIkUVCttss80222yzzcJjezG3++cvXjw3t3cwtu1YlUln2D046heZTBuH7Vl1UMLUPv/25uPHx4+/+w3iPtPi2pr1WbsXg/Hp18rVJsoBv3nw4KafB8e/Q9lhWmy7VOmMWuk2Nr1h3dE85sPHn9+kOf4WhSGIVy87h1N5Hc24Xdeos79/EAFdorlStEv1YUNdR1PbLeU7rgtkhTePcVk0tlMf5deRtGY5kA9dYFxoormxK8OMVqXYH7cabrL+7GiieGivBOPCm9+h+0odUeVs1Ybl3eqgUnKYlKxBfbfcro0FG40shWM/fPAFJzxG7hetNnieteGk0gxEQPwPrEFnBP7fNKQL0gWaFlYO+RMcdzsVEY2DlgazAwBZlmpbPaBZYYU/uYOOJYVjmaV6mS9LCaMPBIQGfaNqSU0XKa1dbm9lKSAvxGpprGT9PMjLo8hmp5fYZScV+OgLUHj8DYrPTrQvrVlTh0eRlXK8O5lWM4F8GaIAd+O+7kCfR5GTWmzXDUHfEQKTQpRRmxUfWA8tJB4xDrqx3bdh4CewEGVEM4y3ByVMX4BM9LEDCAgLMYDW2LAPMI4AICjEmDvFCnCo7/NHN3Y8/j/F2+oKB4SECCVYYnvmbv7rz0dlHax5xP5nJoGA8LE+sMo2coM8PhkZfLwxnVkRIC9EALIzwI6yz8mz0sZeFNUYkBPqA0tMH1FTq6BO/jUKtmca+sBrsFAfWGH+N3cVfBq6IGXmP9Z2SxAW6gOZUUxPvgBR1kStaG3re7cEIeHn+kDmeihL+rQLLwod5Hz/yTVYqA9kxlF1KSAiz8skBIJCfWA0dTuS6uPxb0+UpgQICfWB0Wh/JLM0gSHiYv8QAAGhPjAax3TsJRQfyR9uX4OF2kC7JX8JIl99bL66/QtYiAmsZADNVM8gLhAWIlbRcUYvaNLnA0EhYis6bi7PFwAhoT4wnKO1UoFmfQQICBFHMuPUAjR4d94LAfJCxLFoKtCwLwRyQszZREoVNVxBGWBSiDAfDIEprSiGITURMCF8pD+jD9fUxP2g8QJ0gddh4aPfau87bEarQqDpK9AHwkKENZlO5nTQfAEWvrpzHRYilGB4EXZFQPMFGAAhIQIwvAgbIqD+ITITAAEhBjBc/bGWVkMpkBdiAK2MVmYBNTQEckIMYIEubgmm9AsFJoUowGH6RbhYYEKIAgzraGVZbYwL/AwWogDDSS/cE2IcISsuEBbiACcEeLRUICjEAdqpdRTjCFnxgZDwNgqwQG8vD6EiRDlCRgIgIEQC0uHadGklePIZLEQChlMKqK/HOUJ6KJATYgFpT3GwbGBSiAUs9MTNzEI6+pMbsBANSJdmgOHaIoCnJzdgIRowLEJ+SgHNJpwKbtwShIV4QFqEfE8BTpfo2AApf/SAkBAPGK7hS7Yy1dQTVs2PN26AwuuIQNqQ8kUI/z2qkAB5ISIwHM5wV6GglcEUUiAnxATSEWk7WYSiNQtEYQhMCjGB4QIiV4SiDfCEP964AgtRgQXyiDU3nBH2hETY3tWNC4SFuEDaVdQl62go5B/hVczpyRVYeAcVSJ88bCWLULwFEdY1D3x69wosRAYWSBEmH6tMGa3hCAMgILzztd6Ok6HNRvJeYfYmekIC5IXYQDqeOXSkgShCCuSE6EDaGSZmvqnL9wjC07u/hIXowLCSytdRDKELhIX4QPp8ZWJimD4p1BZ6QFBoAFiAK2n6NrpCHwgJr/8Jf749ACtpxnE0hQEQEF7/qYgvLIMjtoyN9IQECAh/KuYSWkfFqfgbiw2ou886jJbw9O6XAqELzCMMVnpFRNpXVFSKUEvoAgVCD5hHSO4JCj6tB59ObZUi1BF6QFAYAPMIybPagrelDKG+ImOP9rs/7+395elf8wh9ICS8EwA1ylDwXX5yGU4c+SJ88vLVnp+//V35ZAIgIDz5xw+5haRGJb+rGIRehpZ8Ef7z1a1bgXDv4l+K53Lv7EtYePI1rWu5W5riFPyQLLL1pUekhdcukAr3Xj5ROpVTAuSELlBDSAct4GcToDdMPca5BwyFexcqRFqCnNAD6gjJ7Aj88jdZRozduE/b1/OXt2LCTxWIETAh9IE6QjJq2YU+I7tlB6USRcgI5YkMMC4MgDpC0uUNoc+A/j51X69vJYWyxHtnv4KFd8lsQkNImpoa8BFtSpkiTG9nXvHCT+cyRBcICylQR0gKqg98QprSlmwlBYUypegBQWEI1BK2hNuSvpJ9lDR9V7cgYXYp+kBIGAG1hF1hYzojl6gjWUkL/+ZaGhliAASEDFBLSBpTYIWajOiY7y9nHOBNsreQIRIgL2SBWkLSrQMjU/KECTMqzdrXa1iYRqRAThgDagnJQgXwbqJGsrPIfAQ4KERe+GshMQQmhXGglpC0mMDrXshD3ZZsJS14MwtYKCJGwIQwAdQSOsG2B/wnpDtsSldSN+cvYSFMZIBxYRKoJSSQBvfvpMOfyldSL+cXsBAissCYkANiCPn5ExGOHflK6uX8AhbyxHtnV2EhD8QQ8vMnJzmkkdx9RIwLk0QXCAsBoJ6wJRCSEWv03LrsDs9fwcL9+TvmrzwgKISAesKjdGHPUbkMvVT/IxDuM6XoAyEhCNQTijZuJoTSe68WnwqEUSkGQEAIA/WEB/hCQuSFlEiAvPDuW3ifJoU1R/Ey9OckTwXC/flbBsgJz0S3zzCE3GVm6Qh9IiTcn98rvJlfhYVnghI0VIakpaHfr5D/Xlowr3wqELrEq1dhobAEDbU0if5Qfudk5vzfC1i4vy8QiktQU9gTbGzHhfI7pM9EnV/AwquwMA1opscnwr7qZRjdewqJMsJUoJ6wny4s5heGRAlhOtDMuDQ+P1T4Aixz/5AQs4UZQD1hMJXviT4gQvXXGvr3DwNipjALqCcMFmqAlSjSjdR1hAExS5gJ1BN67yrpQzdsyY2ZYCVKYX/xu9zn80xhNlBT6DYq4L+S9dKOntAjpgslgNpCOGSdcaQpdImpQhmgISF5/tm/QaryLgHuWYwn8xShFNCQkAzbiraukBBBoRzQkJD2lIpNKfQ8jU+EhJJAU0IyYh3oC30iIJQFmhKOosZUV+gReaE00JSQvNTL+zqQymbwU19P5pxQHmhKSBrTHoowIuYAmhIyswuVzURP7lFiDqApIZ1YDXCEhXdzRhhbHs6MKSFpamaO0suDxE9fvpmHwrM3SmdiSkjGbYdYwoL93jeezd8rnqspYZNciGjCQuHFk/f/e/9W+YeJTAnDp6KU9oz03bVYjAnJoyizzRWSCxF6JkyctRLSl7bgXYc5Y0xIF1OVzna9hOSJqa7KNuslpO9TUNlmvYT0PXsqp7tmQvL43qHCJmsmpNU074owUgwK6fwi9Rf54lk3IVkXHstvsW5C2ulXsv+UBOutEWxMCukNGvkukT4fXsbLTPw0OkLINzLkR264b1GKxdCbxcjewS+dbIZwprj79RPSJbfZxgrDV2GtjfDZ5eXlMxUh7TAkCxH5jXSqwmcfdoLcV0COFA7g1mrLWCSOTn1ePkoLaSFKN6fLy/2dWKSLkRbiIl4rr5UEcGdHdkNaiCqTqGXkQxIoX1Hp+9jlR6dLCQfc2bmU3JT2iQpTjCWEq6Mq9ZS+W1Bhnrj4QED5xob+fvtC3oycL89A4QfZzenrhtTWvxeaS1B4X3p7+iZa8Kv7K5GfQaF8t08fIFrdThEuQ3lh+HtrDVNnqBvdWhp+Qwr6Ru1KBG5pZDtEL+GvPa1qv/8REipNo8LfBVzEm9hzBKqmKpW0ELWnDRPnhxCgEJWKkPmlEvi1S0sPfyX+rLqL8OcdV3T0lqyninXUS/jjeaiL9niJl6L0iI1N+AOIMksKy0g0R/yoeA3ShL/mvLJj8Mv7H3c+3v+Q08eM3lZ3+KYba/OJ9ZC4oj2/fsIGdbqxpRj+mOXqNje6aYfEVe00tBMRV3WioZ1RSBS8/HT9ExHX4HZGvkQVFXgF02YkalH7m9qkMvdCN/ViHETEVb8tlTfNiDjd0G7D7kXGTW1Toya1ON7QAQ777AXwckITqVcXO6tpjhlj1fzxqktovJmaWuwZrqoWubkg+C0AU6kwxGLXYP9f6tKjLPzuSZc1tg1dJg5TWWQfs8PLYBozGihHZ8geYRntduwEiiPkC8WK1ZIlLbo3a7GTqCGui9cTu15wO8OcSKyqus0BSmUtleN7BV+ns7B04idT7E00Wx1nUkvscul3hRL/4W6VmuRedOR5S2hD+dicsdgo52j6KuUGt6PyqixCz7hTc2eQE0v69OzKjCs89/pbqWd5JmP+DN2rcpjJtCu7bb7s3Byt3C3LShc6Ty+1UXlSt0oOY7WdklWflLugzctwaf1DWuyJ8ISDTPvjcas1Hven6X9XW8CMJW9KM7C2qqS3u+r3f5qdXjZDlMP8Pc1C41Tb/WxNMrXZei1uOfWyfFlOD9ZMR2M3q+WDDNzRqDNYj5qZkuZg0il3az2mEWr1aoflTt1ae9s222yzzTbbrEX+D5EVY4D25mTqAAAAAElFTkSuQmCC">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
+                        Il n’y a pas besoin de connaissances préalables en HTML pour parcourir ce module, mais vous devez au moins être familier des ordinateurs et d’une utilisation passive du Web (càd. juste le parcourir et consommer son contenu). Vous devriez avoir un environnement de travail en place tel que détaillé dans cet article et comprendre comment créer et gérer des fichiers tel qu’expliqué dans cet autre article — ces deux articles font partie du module Démarrer avec le Web qui s’adresse aux débutants.
                     </p>
                 </div>
             </article>
 
             <article>
-                <h3>
-                    Titre 3
-                </h3>
+                <h1>
+                    Anatomie d'un document HTML
+                </h1>
                 <div class="contenu_article">
-                    <img src="images/article3.jpeg">
+                    <img src="./../images/HTML/intro.JPG">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
+                        <ol>
+                            <li>&lt;!DOCTYPE html&gt; :  le type de document.  </li>
+                        </ol>
                     </p>
+
                 </div>
             </article>
 
