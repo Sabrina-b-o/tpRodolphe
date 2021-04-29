@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Team Rocket</title>
+</head>
+<body>
+
+    <header>
+
+        <img src="../images/logo.png" alt="logo">
+        <img src="../images/titre.png" alt="logo">
+
+    </header>
+
+    <!-- MENU DE NAVIGATION -->
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="html.html">HTML</a>
+            </li>
+            <li>
+                <a href="css.html">CSS</a>
+            </li>
+            <li>
+                <a href="javascript.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="api.html">API</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="main">
+
+        <!-- CONTENU CENTRAL -->
+        <div id="container_large">
+
+            <section>
+                <h3>Formulaire de contact :</h3>
+
+                <form method="POST" action="#">
+
+                    <div class="contenu_contact">
+                        <div>
+                            <div class="formulaire">
+                                <label class="red" for="nom">Nom :</label>
+                                <input type="text" minlength="2" maxlength="20" name="nom" id="nom"/>
+                            </div>
+                            <div class="formulaire">
+                                <label class="red" for="prenom">Prénom :</label>
+                                <input type="text" name="prenom" id="prenom"/>
+                            </div>
+                            <div class="formulaire">
+                                <label class="red" for="mail">Email :</label>
+                                <input type="email" name="mail" id="mail"/>
+                            </div>
+                            <div class="formulaire">
+                                <label for="tel">Téléphone :</label>
+                                <input type="tel" name="tel" id="tel"/>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="formulaire">
+                                <label class="red" for="message">Votre message :</label>
+                                <textarea name="message" id="message"></textarea>
+                            </div>
+                        </div>
+                        <img src="../images/pokeball.png" alt="pokeball">
+                    </div>
+                    <div class="formulaire">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+
+
+
+            </section>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_col">
+            <h3>Informations</h3>
+            <ul>
+                <li>
+                    <a href="#">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                    <a href="#">CGV</a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_col">
+
+            <img src="../images/titre_footer.png" alt="Team Rocket" />
+
+            <p>
+                <a href="https://github.com/Sabrina-b-o" target="_blank">
+                    <img src="../images/jessie.png" alt="Sabrina" />
+                </a>
+                <a href="https://github.com/Hrodvitnir-Fenrir" target="_blank">
+                    <img src="../images/james.png" alt="Léandre" />
+                </a>
+                <a href="https://github.com/steeven-th" target="_blank">
+                    <img src="../images/miaous.png" alt="Steeven" />
+                </a>
+            </p>
+        </div>
+        <div class="footer_col">
+            <h3>En partenariat avec l'ADRAR</h3>
+            <a href="https://www.adrar-formation.com" target="_blank">
+                <img src="../images/logo_adrar.png" alt="ADRAR">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

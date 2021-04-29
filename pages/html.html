@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>HTML</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="../images/logo.png" alt="logo">
+        <img src="../images/titre.png" alt="logo">
+
+    </header>
+
+    <!-- MENU DE NAVIGATION -->
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="html.html">HTML</a>
+            </li>
+            <li>
+                <a href="css.html">CSS</a>
+            </li>
+            <li>
+                <a href="javascript.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="api.html">API</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BLOC DE PRESENTATION DE LA PAGE -->
+    <article id="presentation">
+        <h3 id="what_is_html">
+            Le HTML c'est quoi ?
+        </h3>
+        <div class="contenu_article_row">
+            <img src="../images/html.png" alt="HTML">
+            <p>
+                Dans son cœur, HTML est un langage vraiment simple, composé d’éléments appliquables à des fragments de texte dans un document pour leur donner un sens différent (est-ce un paragraphe ? est-ce une liste à puces ? est-ce une partie de tableau ?), pour structurer un document en sections logiques (a‑t‑il un en-tête ? est-il sur trois colonnes ? a-t-il un menu de navigation ?) et pour intégrer du contenu comme images ou vidéos dans une page. Ce module est une introduction aux deux premiers concepts. Il présente les notions fondamentales et la syntaxe à connaître pour comprendre le HTML.
+            </p>
+        </div>
+    </article>
+
+    <div id="main">
+
+        <!-- CONTENU LATERAL DROIT -->
+        <div class="aside_contenair">
+            <aside>
+                <h3>
+                    Menu rapide
+                </h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#what_is_html">Le HTML c'est quoi ?</a>
+                        </li>
+                        <li>
+                            <a href="#prerequis">Prérequis</a>
+                        </li>
+                        <li>
+                            <a href="#anatomie">Anatomie d'un document HTML</a>
+                        </li>
+                        <li>
+                            <a href="#balises">Liste de balises utiles</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <aside>
+                <h3>
+                    Contributeurs
+                </h3>
+                <div>
+                    <ul>
+                        <li>
+                            Sabrina
+                        </li>
+                        <li>
+                            Léandre
+                        </li>
+                        <li>
+                            Steeven
+                        </li>
+                    </ul>
+                    <p>
+                        <img src="../images/facebook.png" alt="Facebook" />
+                        <img src="../images/twitter.png" alt="Twitter" />
+                        <img src="../images/vimeo.png" alt="Vimeo" />
+                        <img src="../images/flickr.png" alt="Flickr" />
+                        <img src="../images/rss.png" alt="RSS" />
+                    </p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- CONTENU CENTRAL -->
+        <div id="container">
+
+            <article>
+
+                <h3 id="prerequis">
+                    Prérequis 
+                </h3>
+
+                <div class="contenu_article_column">
+                     <img src="../images/prerequis.png" alt="prérequis" />
+                    <p>
+                        Il n’y a pas besoin de connaissances préalables en HTML pour parcourir ce module, mais vous devez au moins être familier des ordinateurs et d’une utilisation passive du Web (càd. juste le parcourir et consommer son contenu). 
+                    </p>
+                </div>
+
+            </article>
+
+            <article>
+
+                <h3 id="anatomie">
+                    Anatomie d'un document HTML
+                </h3>
+
+                <div class="contenu_article_column">
+
+                    <img src="./../images/intro.jpg" alt="intro" />
+       
+                    <blockquote>
+                        <ol>
+                            <li><strong>&lt;!DOCTYPE html&gt;</strong> :  le type de document.  </li>
+                            <li><strong>&lt;html&gt;&lt;/html&gt;</strong> : Cet élément est le contenant de tout le code de la page et est parfois connu comme l'élément racine.</li>
+                            <li><strong>&lt;head&gt;&lt;/head&gt;</strong> : Cet élément a le rôle de conteneur pour toute chose que vous souhaitez inclure dans la page HTML qui ne soit pas du contenu à afficher aux visiteurs de la page. </li>
+                            <li><strong>&lt;meta charset="utf-8"&gt;</strong> : cet élément définit que le jeu de caractères à utiliser pour votre document est UTF-8.</li>
+                            <li><strong>&lt;title&gt;&lt;/title&gt;</strong> : Il définit le titre de la page, celui qui s'affiche dans l'onglet du navigateur dans lequel la page est chargée et qui est utilisé pour décrire la page lorsque vous la marquez ou l'ajoutez aux favoris.  </li>
+                        </ol>
+                    </blockquote>
+
+                </div>
+
+            </article>
+
+            <article>
+
+                <h3 id="balises">
+                    Liste de balises utiles
+                </h3>
+
+                <div class="contenu_article_column">
+                    <p>
+                       Pour structurer sa page HTML on utilise des balises, pour créer des sections, insérer des liens, des vidéos, des images ... etc.
+                    </p>
+
+                    <p>
+                        Voici quelques exemples : 
+                    </p>
+
+                    <div class="contenu_article_tableau">
+                        <div class="col">
+
+                            <h2>Le liens</h2>
+
+                            <p>
+                                &lt;a href="adresse"&gt;
+                                &lt;/a&gt;
+                            </p>
+
+                            <br/>
+
+                            <h2>Images</h2>
+
+                            <p>
+                                &lt;img src="adresse"/&gt;
+
+                            </p>
+
+                        </div>
+
+                        <div class="col">
+
+                            <h2>Conteneur</h2>
+
+                            <p>
+                                &lt;div&gt;&lt;/div&gt;
+                            </p>
+
+                            <br/>
+
+                            <h2>Listes</h2>
+
+                            <p>
+                                &lt;ul&gt;
+                            </p>
+
+                            <p>
+                                &lt;li&gt;&lt;/li&gt;
+                            </p>
+
+                            <p>
+                                &lt;li&gt;&lt;/li&gt;     
+                            </p>
+                            <p>
+                                &lt;/ul&gt;
+                            </p>
+
+                        </div>
+
+                        <div class="col">
+
+                            <h2>Video</h2>
+
+                            <p>
+                                &lt;video src="adresse"&lt;/video&gt;
+                            </p>
+
+                            <br/>
+
+                            <h2>Audio</h2>
+
+                            <p>
+                                &lt;audio src="adresse"/&gt;
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_col">
+            <h3>Informations</h3>
+            <ul>
+                <li>
+                    <a href="#">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                    <a href="#">CGV</a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_col">
+
+            <img src="../images/titre_footer.png" alt="Team Rocket" />
+
+            <p>
+                <a href="https://github.com/Sabrina-b-o" target="_blank">
+                    <img src="../images/jessie.png" alt="Sabrina" />
+                </a>
+                <a href="https://github.com/Hrodvitnir-Fenrir" target="_blank">
+                    <img src="../images/james.png" alt="Léandre" />
+                </a>
+                <a href="https://github.com/steeven-th" target="_blank">
+                    <img src="../images/miaous.png" alt="Steeven" />
+                </a>
+            </p>
+        </div>
+        <div class="footer_col">
+            <h3>En partenariat avec l'ADRAR</h3>
+            <a href="https://www.adrar-formation.com" target="_blank">
+                <img src="../images/logo_adrar.png" alt="ADRAR">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

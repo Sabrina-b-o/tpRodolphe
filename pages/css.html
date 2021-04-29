@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/209a32a587.js" crossorigin="anonymous"></script>
+    <title>CSS</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="../images/logo.png" alt="logo">
+        <img src="../images/titre.png" alt="logo">
+
+    </header>
+
+    <!-- MENU DE NAVIGATION -->
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="html.html">HTML</a>
+            </li>
+            <li>
+                <a href="css.html">CSS</a>
+            </li>
+            <li>
+                <a href="javascript.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="api.html">API</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BLOC DE PRESENTATION DE LA PAGE -->
+    <article id="presentation">
+        <h3 id="what_is_css">
+            Introduction à CSS
+        </h3>
+        <div class="contenu_article_row">
+            <img src="../images/css.png" alt="Css_Logo">
+            <section>
+
+                <p>
+                    CSS ? C'est lui qui vous permet de choisir la couleur de votre texte.
+                    Lui qui vous permet de sélectionner la police utilisée sur votre site.
+                    Lui encore qui permet de définir la taille du texte, les bordures, le fond…
+                    Et aussi, c'est lui qui permet de faire la mise en page de votre site. Vous pourrez dire : je veux que
+                    mon menu soit à gauche et occupe telle largeur, que l'en-tête de mon site soit calé en haut et qu'il
+                    soit toujours visible, etc.
+                </p>
+
+                <p>
+                    On peut écrire le css a 3 endroits différents, on peut l’introduire dans le html pour cela il suffit d’ajouter « style » dans une balise, ou de mettre le css dans le head, mais ces deux façon-là ne sont pas vraiment recommandée. On utilise la dernière méthode du coup, créé un dossier .css et dans ce dernier on pourra donc appeler les balises pour les modifier, mais pour cela il faut ajouter une ligne dans le head du html :
+                </p>
+
+                <p class="p_center">
+                        <code>&ltlink&gt; rel="stylesheet" href="le_nom_du_css.css&gt;</code>
+                </p>
+
+            </section>
+        </div>
+    </article>
+
+    <div id="main">
+
+        <!-- CONTENU LATERAL -->
+        <div class="aside_contenair">
+            <aside>
+                <h3>
+                    Menu rapide
+                </h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#what_is_css">Introduction à css</a>
+                        </li>
+                        <li>
+                            <a href="#select_html">Comment sélectionner une balise html dans le css ?</a>
+                        </li>
+                        <li>
+                            <a href="#property">Mais du coup, on peut mettre quoi comme propriété ?</a>
+                        </li>
+                        <li>
+                            <a href="#flex_grind"> Mais du coup, pour la mise en page ?</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <aside>
+                <h3>
+                    Contributeurs
+                </h3>
+                <div>
+                    <ul>
+                        <li>
+                            Sabrina
+                        </li>
+                        <li>
+                            Léandre
+                        </li>
+                        <li>
+                            Steeven
+                        </li>
+                    </ul>
+                    <p>
+                        <img src="../images/facebook.png" alt="Facebook" />
+                        <img src="../images/twitter.png" alt="Twitter" />
+                        <img src="../images/vimeo.png" alt="Vimeo" />
+                        <img src="../images/flickr.png" alt="Flickr" />
+                        <img src="../images/rss.png" alt="RSS" />
+                    </p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- CONTENU CENTRAL -->
+        <div id="container">
+
+            <article>
+                <h3 id="select_html">
+                    Comment sélectionner une balise html dans le css ? <i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+                </h3>
+                <div class="contenu_article_column">
+                    <p>
+                        Il y a diverses façons de sélectionner un élément dans le fichier html :
+                    </p>
+                    <img src="../images/selecteur.png" alt="selecteur" >
+
+                    <blockquote>
+                        <ul>
+                            <li>
+                                En premier lieux on a les class, on peut en donner plusieurs à un même élément, tout comme on peut donner la même à différents éléments, puis dans le css il suffit de mettre un <strong>"."</strong> devant son nom pour sélectionner la class.
+                            </li>
+                            <li>
+                                Il y a les id, ils se limite à un seul par élément et ils doivent être unique, dans le css il faut un <strong>"#"</strong> devant son nom pour sélectionner l'id en question.
+                            </li>
+                            <li>
+                                On peut aussi appeler les éléments directement par leurs noms, mais cela sélectionne TOUS les éléments en question, sinon donner <strong>"le chemin d'accès"</strong> de l'élément avec un <strong>">"</strong> entre les éléments.
+                            </li>
+                            <li>
+                                Un peu plus poussé, il y a les <strong>":nth-child(X)"</strong> qui permet de sélectionner l'enfant d'un élément.
+                            </li>
+                        </ul>
+                    </blockquote>
+
+                </div>
+            </article>
+
+            <article>
+                <h3 id="property">
+                    Mais du coup, on peut mettre quoi comme propriété  ? {}
+                </h3>
+                <div class="contenu_article_column">
+                    <p>
+                        Il y a énormément de propriété qui peuvent être utilisée, on va voir les principales et les plus importantes :
+                    </p>
+
+                    <blockquote>
+                        <ul>
+                            <li>
+                                <strong>background:</strong><br> 
+                                Cela gère toutes les propriétés de l'arrière-plan de l'élément, que ça soit la couleur, la taille, ajouter une image…
+                            </li>
+                            <li>
+                                <strong>margin | padding:</strong><br> 
+                                Ces deux propriétés permettent d’ajouter de la marge a l’élément sélectionner, margin pour de la marge extérieure et padding pour de la marge intérieure a l’élément. 
+                            </li>
+                            <li>
+                                <strong>width: | height :</strong><br>
+                                On utilise ces propriétés pour gérer la taille d’un élément, on peut utiliser diverses valeurs comme les <strong>px</strong>, <strong>vh</strong>, <strong>em</strong>, même si de manière générale on privilégie les <strong>%</strong>.
+                            </li>
+                        </ul>
+                    </blockquote>
+
+                </div>
+            </article>
+
+            <article>
+                <h3 id="flex_grind">
+                    Mais du coup, pour la mise en page ? <i class="far fa-copy"></i>
+                </h3>
+                <div class="contenu_article_column">
+                    <p>
+                        Pour cela on a deux options possibles, nous disposons des <strong>flexbox</strong> ou des <strong>grind</strong>, il suffit de faire <strong>display: flex</strong>, ou <strong>display: grid</strong> sur l’élément parent.
+                    </p>
+
+                    <div class="contenu_article_tableau">
+
+                        <div class="col2">
+                            <h2>Les flexbox</h2>
+                            <p>
+                                Si vous êtes team Steeven les flexbox sont moins pratiques d’utilisation, on se retrouve avec une multitude de propriétés pour le placement de nos box, toujours dans le parent, on peut définir la disposition de base du flexbox, et dans les enfants on peut leur attribuer les placements
+                            </p>
+                        </div>
+
+                        <div class="col2">
+                            <h2>Les grid</h2>
+                            <p>
+                                Si vous êtes team Léandre les grid sont plus pratiques d’utilisation avec la propriété "grid-template:" sur l'élément parrent on peut définir le nombre de colonnes et de ligne dans le tableau que vous allez créer, puis pour chaque élément enfant vous pouvez définir le placement avec "grid-column:" ou "grid-raw:".
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_col">
+            <h3>Informations</h3>
+            <ul>
+                <li>
+                    <a href="#">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                    <a href="#">CGV</a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_col">
+
+            <img src="../images/titre_footer.png" alt="Team Rocket" />
+
+            <p>
+                <a href="https://github.com/Sabrina-b-o" target="_blank">
+                    <img src="../images/jessie.png" alt="Sabrina" />
+                </a>
+                <a href="https://github.com/Hrodvitnir-Fenrir" target="_blank">
+                    <img src="../images/james.png" alt="Léandre" />
+                </a>
+                <a href="https://github.com/steeven-th" target="_blank">
+                    <img src="../images/miaous.png" alt="Steeven" />
+                </a>
+            </p>
+        </div>
+        <div class="footer_col">
+            <h3>En partenariat avec l'ADRAR</h3>
+            <a href="https://www.adrar-formation.com" target="_blank">
+                <img src="../images/logo_adrar.png" alt="ADRAR">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
