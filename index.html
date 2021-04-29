@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/logo.png" />
+    <link rel="icon" href="./images/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Team Rocket</title>
 </head>
+
 <body>
 
     <header>
@@ -42,73 +46,116 @@
     <div id="main">
 
         <!-- CONTENU CENTRAL -->
-        <div id="container">
+        <div id="container_large">
 
             <article>
-                <h3>
-                    Titre 1
-                </h3>
-                <div class="contenu_article">
-                    <img src="images/article1.jpeg">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
-                    </p>
-                </div>
-            </article>
 
-            <article>
                 <h3>
-                    Titre 2
+                    Présentation de notre équipe
                 </h3>
-                <div class="contenu_article">
-                    <img src="images/article2.jpeg">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
-                    </p>
-                </div>
-            </article>
+                <h2>
+                    De retour pour vous jouer un mauvais tour
+                </h2>
 
-            <article>
-                <h3>
-                    Titre 3
-                </h3>
-                <div class="contenu_article">
-                    <img src="images/article3.jpeg">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci assumenda corporis deleniti dolorem eligendi error
-                        impedit, itaque magni natus nemo officia pariatur quaerat quidem
-                        quod totam ullam voluptatibus. Libero, qui?
-                    </p>
+                <div class="contenu_article_column">
+
+                    <iframe width="800" height="496" src="https://www.youtube.com/embed/NH7O7c9FCZE?autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+
+                    <section>
+                        <p>
+                            Nous sommes une équipe de trois développeurs <strong>JESSIE</strong>, <strong>JAMES</strong> et <strong>MIAOUS</strong> ! 
+                        </p>
+
+                        <p>
+                            Notre but ultime est de dominer le monde mais aussi de vous montrer les bases du développement.
+                        </p>
+                    </section>
+
                 </div>
+
+                <article>
+
+                    <h3 class="cachee">
+                        Présentation de nos principaux rivaux 
+                    </h3>
+
+                    <div class="contenu_article_column_index">
+
+                        <section>
+                            <img src="./images/sacha.png" alt="sacha" />
+                            <p>
+                                La Team Sacha est composé <strong>d'Angela</strong>, <strong>Milan</strong> et <strong>Stéphane</strong>
+                            </p>
+                        </section>
+
+                        <section>
+                            <img src="./images/ondine.png" alt="ondine" />
+                            <p>
+                                La Team Ondine est composé de <strong>Najet</strong>, <strong>Nadege</strong> et <strong>Jessica</strong>
+                            </p>
+                        </section>
+
+                        <section>
+                            <img src="./images/pierre.png" alt="pierre" />
+                            <p>
+                                La Team Pierre est composé de <strong>jonathan</strong>, <strong>Fabien</strong> et <strong>Vincent</strong>
+                            </p>
+                        </section>
+
+                    </div>
+
+                </article>
+
             </article>
 
         </div>
+    </div>
 
-        <!-- CONTENU LATERAL DROIT -->
-        <aside>
-            <h2>
-                Galerie
-            </h2>
-            <div>
-                <img src="images/article1.jpeg" alt="article1">
-                <img src="images/article2.jpeg" alt="article2">
-                <img src="images/article3.jpeg" alt="article3">
-            </div>
-        </aside>
-
+    <div class="herbe">
+            <img src="./images/herbes.png">
     </div>
 
     <footer>
-        <p>
-            Ceci est un Footer
-        </p>
+        <div class="footer_col">
+            <h3>Informations</h3>
+            <ul>
+                <li>
+                    <a href="#">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                    <a href="#">CGV</a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="pages/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_col">
+
+            <img src="images/titre_footer.png" alt="Team Rocket" />
+
+            <p>
+                <a href="https://github.com/Sabrina-b-o" target="_blank">
+                    <img src="images/jessie.png" alt="Sabrina" />
+                </a>
+                <a href="https://github.com/Hrodvitnir-Fenrir" target="_blank">
+                    <img src="images/james.png" alt="Léandre" />
+                </a>
+                <a href="https://github.com/steeven-th" target="_blank">
+                    <img src="images/miaous.png" alt="Steeven" />
+                </a>
+            </p>
+        </div>
+        <div class="footer_col">
+            <h3>En partenariat avec l'ADRAR</h3>
+            <a href="https://www.adrar-formation.com" target="_blank">
+                <img src="images/logo_adrar.png" alt="ADRAR">
+            </a>
+        </div>
     </footer>
 
 </body>

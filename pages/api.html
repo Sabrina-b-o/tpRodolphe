@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../style_steeven.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../images/logo.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>HTML</title>
+    <title>API</title>
 </head>
+
 <body>
 
     <header>
@@ -41,19 +43,19 @@
         </ul>
     </nav>
 
+    <!-- BLOC DE PRESENTATION DE LA PAGE -->
     <article id="presentation">
         <h3 id="what_is_api">
             Qu'est ce qu'une API ?
         </h3>
         <div class="contenu_article_row">
-            <img src="../images/logo-api.png" alt="API">
+            <img src="../images/logo-api.png" alt="Application Programming Interface">
             <p>
                 Vous êtes-vous déjà demandé comment toutes les dernières publications Facebook et Twitter se retrouvent comme par magie sur votre téléphone ou dans votre navigateur ? Comment les sites de comparateurs de vols ou d'hôtels arrivent à avoir tous les prix de toutes les compagnies aériennes ou de tous les hôtels dans leur application ? Et qu’en est-il de la façon dont vous pouvez voir et modifier des données à travers vos applications web ?
 
                 Eh bien, tout ça c’est grâce à une API !
                 <br/><br/>
                 Une API est un ensemble de définitions et de protocoles qui facilite la création et l'intégration de logiciels d'applications. API est un acronyme anglais qui signifie « Application Programming Interface », que l'on traduit par interface de programmation d'application.
-
             </p>
         </div>
     </article>
@@ -81,7 +83,6 @@
                             <a href="#security_api">Sont-elles sûres ?</a>
                         </li>
                     </ul>
-
                 </div>
             </aside>
 
@@ -108,7 +109,6 @@
                         <img src="../images/flickr.png" alt="Flickr" />
                         <img src="../images/rss.png" alt="RSS" />
                     </p>
-
                 </div>
             </aside>
         </div>
@@ -127,22 +127,23 @@
                         mois de février, partir profiter de la douceur du Portugal ne serait pas une mauvaise idée.
                         Alors, vous ouvrez une application de comparateur de vols et voilà !
                     </p>
+
                     <p>
                         ✨Vous trouvez plusieurs offres de différentes compagnies aériennes pour Lisbonne ! Bon, l’avion, ce n’est pas très écolo et entre nous les horaires ne sont pas top, alors vous tentez le train. Vous ouvrez une application pour réserver un billet de train et pareil ! Vous trouvez plusieurs offres de trains pour Lisbonne en passant par l’Espagne. Et tout ça sans avoir à aller chercher l’information sur le site de chaque compagnie ferroviaire ou aérienne. Pas mal, non ?
                     </p>
+
                     <p>
                         Vous avez l’habitude de voir toutes ces données défiler sans arrêt sous vos yeux comme par magie, que ce soit sur les réseaux sociaux ou les applications de comparatifs en tout genre. De votre point de vue, c’est assez simple : les informations arrivent au fur et à mesure sans effort ; sauf qu’en coulisse, c’est autre chose ! En effet, un gros travail est effectué pour rendre cela possible et pour que cela fonctionne, il nous faut l’un des outils les plus importants : une API.
                     </p>
-                    <p id="p_center">
+
+                    <p class="p_center">
                         API par ci, API par là, OK OK, mais que signifie <em>API</em>, au juste ? 🤔
                     </p>
+
                     <p>
                         API est une abbréviation et signifie Application Programming Interface (ou interface de programmation d’application, en français). Pour faire simple : c’est un moyen de communication entre deux logiciels, que ce soit entre différents composants d’une application ou entre deux applications différentes.
                     </p>
-
                 </div>
-
-
             </article>
 
             <article>
@@ -153,6 +154,7 @@
                     <p>
                         Prenons l’exemple d'Air France, une compagne aérienne française. Quelque part dans le monde, les serveurs d'Air France ont accès à toutes les données que vous voulez voir pour un trajet Paris-Lisbonne : les différents avions, les tarifs, les statuts des vols, etc. Pour que vous puissiez y avoir accès, votre navigateur (que l’on appelle le client) doit recevoir ces informations de quelqu’un.
                     </p>
+
                     <p>
                         Ce quelqu’un, c’est le serveur. L’application doit avoir une conversation avec le serveur.
                     </p>
@@ -190,9 +192,10 @@
                         C’est ce qu’on appelle la communication entre client et serveur : le client formule une requête (ou une demande) pour obtenir une information et le serveur envoie une réponse contenant les données demandées si cela est possible.
                     </p>
 
-                    <p id="p_center">
+                    <p class="p_center">
                         Et du coup, l’API, elle se place où, dans ce schéma ? Et le rapport avec Air France ? ✈️
                     </p>
+
                     <p>
                         En web, un service web et une API sont tous les deux des moyens de communication. Un service web standard facilite seulement la communication entre deux machines via un réseau. Une API facilite l’interaction entre deux applications différentes afin qu’elles puissent communiquer entre elles : elle sert d’intermédiaire. Le client va demander à l’API une information, celle-ci va aller chercher cette information dans la base de données puis la renvoyer au client dans un second temps.
                     </p>
@@ -204,8 +207,6 @@
                     </p>
 
                 </div>
-
-
             </article>
 
             <article>
@@ -216,6 +217,7 @@
                     <p>
                         Les API vous permettent d'ouvrir l'accès à vos ressources sans sacrifier le contrôle et la sécurité. C'est vous qui choisissez les ressources que vous souhaitez partager, et avec qui. La sécurité des API dépend avant tout de leur bonne gestion. La connexion des API et la création des applications qui utilisent les données ou fonctionnalités exposées par les API peuvent se faire par l'intermédiaire d'une plateforme d'intégration distribuée qui connecte tout, y compris les systèmes existants et l'Internet des objets.
                     </p>
+
                     <p>
                         Il existe trois approches d'accès aux API.
                     </p>
@@ -223,22 +225,30 @@
                     <div class="contenu_article_tableau">
                         <div class="col">
                             <h2>API privées</h2>
+
                             <p>
                                 L'API n'est utilisable qu'en interne. Cette approche permet de garder un contrôle total sur l'API.
                             </p>
+
                         </div>
+
                         <div class="col">
                             <h2>API partenaires</h2>
+
                             <p>
                                 L'API est partagée avec certains partenaires de l'entreprise. Cette approche peut générer de nouveaux flux de revenus sans compromettre la sécurité.
                             </p>
+
                         </div>
+
                         <div class="col">
                             <h2>API publiques</h2>
                             <p>
                                 L'API est accessible à tous. Cette approche autorise les tiers à développer des applications qui interagissent avec votre API et peut devenir source d'innovations.
                             </p>
+
                         </div>
+
                     </div>
 
                 </div>
@@ -247,8 +257,6 @@
             </article>
 
         </div>
-
-
     </div>
 
     <footer>
@@ -274,14 +282,20 @@
                 <img src="../images/titre_footer.png" alt="Team Rocket" />
 
             <p>
-                <img src="../images/jessie.png" alt="Sabrina" />
-                <img src="../images/james.png" alt="Léandre" />
-                <img src="../images/miaous.png" alt="Steeven" />
+                <a href="https://github.com/Sabrina-b-o" target="_blank">
+                    <img src="../images/jessie.png" alt="Sabrina" />
+                </a>
+                <a href="https://github.com/Hrodvitnir-Fenrir" target="_blank">
+                    <img src="../images/james.png" alt="Léandre" />
+                </a>
+                <a href="https://github.com/steeven-th" target="_blank">
+                    <img src="../images/miaous.png" alt="Steeven" />
+                </a>
             </p>
         </div>
         <div class="footer_col">
             <h3>En partenariat avec l'ADRAR</h3>
-            <a href="https://www.adrar-formation.com">
+            <a href="https://www.adrar-formation.com" target="_blank">
                 <img src="../images/logo_adrar.png" alt="ADRAR">
             </a>
         </div>
