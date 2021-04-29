@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_leandre.css">
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/209a32a587.js" crossorigin="anonymous"></script>
+    <title>CSS</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="../images/logo.png" alt="logo">
+        <img src="../images/titre.png" alt="logo">
+
+    </header>
+
+    <!-- MENU DE NAVIGATION -->
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="html.html">HTML</a>
+            </li>
+            <li>
+                <a href="css.html">CSS</a>
+            </li>
+            <li>
+                <a href="javascript.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="api.html">API</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <article id="presentation">
+        <h3 id="what_is_css">
+            Introduction à CSS
+        </h3>
+        <div class="contenu_article_row">
+            <img src="../images/css/css.png" alt="Css_Logo">
+            <p>
+                CSS ? C'est lui qui vous permet de choisir la couleur de votre texte.
+                Lui qui vous permet de sélectionner la police utilisée sur votre site.
+                Lui encore qui permet de définir la taille du texte, les bordures, le fond…
+
+                Et aussi, c'est lui qui permet de faire la mise en page de votre site. Vous pourrez dire : je veux que
+                mon menu soit à gauche et occupe telle largeur, que l'en-tête de mon site soit calé en haut et qu'il
+                soit toujours visible, etc.
+                <br /><br />
+                On peut écrire le css a 3 endroits différents, on peut l’introduire dans le html pour cela il suffit d’ajouter « style » dans une balise, ou de mettre le css dans le head, mais ces deux façon-là ne sont pas vraiment recommandée. On utilise la dernière méthode du coup, créé un dossier .css et dans ce dernier on pourra donc appeler les balises pour les modifier, mais pour cela il faut ajouter une ligne dans le head du html :
+                <br>
+                <span id="p_center"><code>&ltlink&gt; rel="stylesheet" href="le_nom_du_css.css&gt;</code></span>
+            </p>
+        </div>
+    </article>
+
+    <div id="main">
+
+        <!-- CONTENU LATERAL DROIT -->
+        <div class="aside_contenair">
+            <aside>
+                <h3>
+                    Menu rapide
+                </h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#what_is_css">Introduction à css</a>
+                        </li>
+                        <li>
+                            <a href="#select_html">Comment sélectionner une balise html dans le css ?</a>
+                        </li>
+                        <li>
+                            <a href="#property">Mais du coup, on peut mettre quoi comme propriété ?</a>
+                        </li>
+                        <li>
+                            <a href="#security_api">Sont-elles sûres ?</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </aside>
+
+            <aside>
+                <h3>
+                    Contributeurs
+                </h3>
+                <div>
+                    <ul>
+                        <li>
+                            Sabrina
+                        </li>
+                        <li>
+                            Léandre
+                        </li>
+                        <li>
+                            Steeven
+                        </li>
+                    </ul>
+                    <p>
+                        <img src="../images/facebook.png" alt="Facebook" />
+                        <img src="../images/twitter.png" alt="Twitter" />
+                        <img src="../images/vimeo.png" alt="Vimeo" />
+                        <img src="../images/flickr.png" alt="Flickr" />
+                        <img src="../images/rss.png" alt="RSS" />
+                    </p>
+
+                </div>
+            </aside>
+        </div>
+
+        <!-- CONTENU CENTRAL -->
+        <div id="container">
+
+            <article>
+                <h3 id="select_html">
+                    Comment sélectionner une balise html dans le css ? <i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+                </h3>
+                <div class="contenu_article_column">
+                    <p>
+                        Il y a diverses façons de sélectionner un élément dans le fichier html :
+                    </p>
+                    <img src="../images/css/selecteur.png" alt="selecteur" >
+                    <p>
+                        - En premier lieux on a les class, on peut en donner plusieurs à un même élément, tout comme on peut donner la même à différents éléments, puis dans le css il suffit de mettre un "." devant son nom pour sélectionner la class.
+                        <br><br>
+                        - Il y a les id, ils se limite à un seul par élément et ils doivent être unique, dans le css il faut un "#" devant son nom pour sélectionner l'id en question.
+                        <br><br>
+                        - On peut aussi appeler les éléments directement par leurs noms, mais cela sélectionne TOUS les éléments en question, sinon donner "le chemin d'accès" de l'élément avec un > entre les éléments.
+                        <br><br>
+                        - Un peu plus poussé, il y a les ":nth-child(X)" qui permet de sélectionner l'enfant d'un élément.
+                    </p>
+
+                </div>
+
+
+            </article>
+
+            <article>
+                <h3 id="property">
+                    Mais du coup, on peut mettre quoi comme propriété  ? {}
+                </h3>
+                <div class="contenu_article_column">
+                    <p>
+                        Il y a énormément de propriété qui peuvent être utilisée, on va voir les principales et les plus importantes :
+                    </p>
+                    <blockquote>
+                        <ul>
+                            <li>
+                                background: <br> Cela gère toutes les propriétés de l'arrière-plan de l'élément, que ça soit la couleur, la taille, ajouter une image…
+                            </li>
+                            <li>
+                                
+                            </li>
+                        </ul>
+                    </blockquote>
+                    <p>
+                        Ce quelqu’un, c’est le serveur. L’application doit avoir une conversation avec le serveur.
+                    </p>
+
+                    <img src="../images/api_clientserveur.png" alt="API Client Serveur">
+
+                    <p>
+                        Cela ressemble à ça :
+                    </p>
+
+                    <blockquote>
+                        <ul>
+                            <li>
+                                Client : « Salut serveur, est-ce que je pourrais avoir un avion pour Lisbonne le 10
+                                décembre ?» 🤔
+                            </li>
+                            <li>
+                                Serveur : « Voilà, tous les transports disponibles vers Lisbonne le 10 décembre! » 🎉
+                            </li>
+                        </ul>
+                    </blockquote>
+
+                    <p>
+                        Ou alors, si le serveur ne parvient pas à trouver les données, il pourrait répondre comme ceci :
+                    </p>
+
+                    <blockquote>
+                        <ul>
+                            <li>
+                                Serveur : « Désolé, en fait il n’y a pas de vols disponibles le 10 décembre. » 🙁
+                            </li>
+                        </ul>
+                    </blockquote>
+
+                    <p>
+                        C’est ce qu’on appelle la communication entre client et serveur : le client formule une requête
+                        (ou une demande) pour obtenir une information et le serveur envoie une réponse contenant les
+                        données demandées si cela est possible.
+                    </p>
+
+                    <p id="p_center">
+                        Et du coup, l’API, elle se place où, dans ce schéma ? Et le rapport avec Air France ? ✈️
+                    </p>
+                    <p>
+                        En web, un service web et une API sont tous les deux des moyens de communication. Un service web
+                        standard facilite seulement la communication entre deux machines via un réseau. Une API facilite
+                        l’interaction entre deux applications différentes afin qu’elles puissent communiquer entre elles
+                        : elle sert d’intermédiaire. Le client va demander à l’API une information, celle-ci va aller
+                        chercher cette information dans la base de données puis la renvoyer au client dans un second
+                        temps.
+                    </p>
+
+                    <img src="../images/api_clientserveur_api.png" alt="API Client Serveur API">
+
+                    <p>
+                        Les API permettent la communication entre de nombreux composants différents de votre
+                        application, mais aussi entre des composants de votre application et d’autres développeurs.
+                        Elles agissent ainsi comme un intermédiaire qui transmet des messages à travers un système de
+                        requêtes et de réponses.
+                    </p>
+
+                </div>
+
+
+            </article>
+
+            <article>
+                <h3 id="security_api">
+                    Sont-elles sûres ces petites bêtes ? 🦄
+                </h3>
+                <div class="contenu_article_column">
+                    <p>
+                        Les API vous permettent d'ouvrir l'accès à vos ressources sans sacrifier le contrôle et la
+                        sécurité. C'est vous qui choisissez les ressources que vous souhaitez partager, et avec qui. La
+                        sécurité des API dépend avant tout de leur bonne gestion. La connexion des API et la création
+                        des applications qui utilisent les données ou fonctionnalités exposées par les API peuvent se
+                        faire par l'intermédiaire d'une plateforme d'intégration distribuée qui connecte tout, y compris
+                        les systèmes existants et l'Internet des objets.
+                    </p>
+                    <p>
+                        Il existe trois approches d'accès aux API.
+                    </p>
+
+                    <div class="contenu_article_tableau">
+                        <div class="col">
+                            <h2>API privées</h2>
+                            <p>
+                                L'API n'est utilisable qu'en interne. Cette approche permet de garder un contrôle total
+                                sur l'API.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <h2>API partenaires</h2>
+                            <p>
+                                L'API est partagée avec certains partenaires de l'entreprise. Cette approche peut
+                                générer de nouveaux flux de revenus sans compromettre la sécurité.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <h2>API publiques</h2>
+                            <p>
+                                L'API est accessible à tous. Cette approche autorise les tiers à développer des
+                                applications qui interagissent avec votre API et peut devenir source d'innovations.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </article>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>
+            Ceci est un Footer
+        </p>
+    </footer>
+
+</body>
+
+</html>
