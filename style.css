@@ -408,7 +408,7 @@ textarea:focus {
         background-position: 0 400px;
     }
     50% {
-        background-position: 0 0px;
+        background-position: 0 0;
     }
     to {
         background-position: 0 100px;
@@ -418,7 +418,7 @@ textarea:focus {
 .herbe {
     margin: -4px;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .herbe:hover {
