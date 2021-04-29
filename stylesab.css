@@ -94,10 +94,22 @@ li {
     padding: 1%;
     width: 15%;
     border-right: 1px solid white;
+    
 }
 
 li:nth-child(1) {
     border-left: 1px solid white;
+}
+
+nav li{
+    transition:transform .2s;
+}
+
+nav li:hover {
+    background-color:#003049;
+    transform: scale(1.2);
+    
+    border:none;
 }
 
 a {
@@ -439,5 +451,32 @@ footer {
 .contenu_article_column > blockquote ol {
     list-style:none;
 
+}
+
+#containerindex{
+    width:90%;
+
+}
+
+.contenu_article_column iframe{
+    display:flex;
+    margin:auto;
+}
+
+.contenu_article_columnindex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contenu_article_columnindex section{
+    padding:20%;
+    text-align:center;
+    width:50%;
+    margin:auto;
+}
+
+.cachee:hover:after{
+    content:'dans des boîtes des boîtes des boîtes by Rodolphe';
+    color:black;
 }
 
